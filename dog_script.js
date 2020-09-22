@@ -36,10 +36,13 @@ var conpos = 0
 var tim2 = 0;
 var conw, conh;
 
-function setup() {
-	createCanvas(1000,1000);
+function preload(){
 	get_dog();
 	dog = loadImage(dog_name);
+}
+
+function setup() {
+	createCanvas(windowWidth * .5, windowHeight);
 	x = 0;
 	y = 0;
 	r2 = 0;
@@ -119,7 +122,7 @@ function draw() {
 }
 
 function get_dog(){
-	dog_num = floor(random(1018)).toString();
+	dog_num = floor(random(700)).toString();
 	dog_name = "all_dogs/dog" + dog_num + ".jpg";
 }
 

@@ -2,12 +2,15 @@
 /* CSS Document */
 
 body{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: center;
 }
 
 #instruct{
-	position: absolute;
-	left: 1100px;
-	top: 300px;
-	/*background-color: blueviolet;*/
+	display: flex;
+	font-size: large;
+	margin: .5em;
 }
 
